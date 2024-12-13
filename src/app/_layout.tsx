@@ -10,7 +10,8 @@ import {
   Rubik_500Medium,
   Rubik_700Bold
  } from '@expo-google-fonts/rubik'
-import Loading from '@/components/loading'
+
+import { Loading } from '@/components/loading'
 
 export default function Layout() {
   const [fontsLoaded] = useFonts({
@@ -26,7 +27,7 @@ export default function Layout() {
   
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <StatusBar style="auto" />
+      <StatusBar style='auto' />
       <Stack
         screenOptions={{
           headerShown: false,
